@@ -1,0 +1,18 @@
+.header {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.nav {
+  padding-bottom: 41px;
+}
+
+.header__line {
+  border: 1px solid #545454;
+  margin: 0 0 40px;
+  opacity: 0.7;
+}
+
+
+        

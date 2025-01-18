@@ -1,0 +1,9 @@
+.page {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  justify-content: start;
+  align-items: center;
+  padding: 45px 200px 60px 200px;
+}
