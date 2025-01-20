@@ -1,78 +1,74 @@
 .profile {
   width: 880px;
-  height: 120px;
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-bottom: 50px;
 }
 
 .profile__avatar {
-  width: 168.75px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 200px;
+  margin-right: 30px;
+}
+
+.profile__info {
   display: flex;
-  justify-content: flex-start;
+  column-gap: 10px;
+  color: white;
+  display: flex;
   align-items: center;
-}
-
-.profile__cardImage {
-  max-width: 120px;
-  border-radius: 50%;
-}
-
-.profile__profileInfo {
-  max-width: 415px;
-  display: grid;
-  grid-template-areas:
-      "title button"
-      "subtitle .";
-
+  flex-wrap: wrap;
+  margin-right: auto;
 }
 
 .profile__title {
-  grid-area: title;
-  max-width: 373px;
-  font-size: 42px;
-  line-height: 48px;
   font-weight: 500;
-  color: #fff;
-  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 42px;
+  max-width: 450px;
+  box-sizing: border-box;
+  margin: 0 0 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow:hidden;
+  text-align: center;
 }
 
-.profile__subtitle {
-  grid-area: subtitle;
-  width: 415px;
-  text-align: left;
-  font-size: 18px;
-  color: #fff;
-  margin: 0;
-  padding-top: 16px;
-}
-
-.profile__buttonEdit{
-  grid-area: button;
+.profile__border-pincel {
+  display: flex;
   width: 24px;
   height: 24px;
-  background: transparent url("../images/Edit\ Button.png") center no-repeat;
-  border: 1px solid #fff;
-  padding: 0;
-  margin-top: 15px;
-
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  box-sizing: border-box;
 }
 
-.profile__buttonEdit:hover {
+.profile__border-pincel:hover {
   opacity: 60%;
   cursor: pointer;
 }
 
-.profile__addButto {
-  background-image: url("../images/Add\ Button.png");
+.profile__subtitle {
+  width: 415px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+
+.profile__border-plus {
   display: flex;
   width: 150px;
   height: 50px;
-  border: 1px solid #000;
+  border: 1px solid white;
   box-sizing: border-box;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: 20px;
+  justify-content: center;
 }
 
+.profile__border-plus:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
