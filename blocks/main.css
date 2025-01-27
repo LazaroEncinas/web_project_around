@@ -3,3 +3,10 @@
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .main {
+    margin: 36px auto 50px;
+    align-items: center;
+  }
+}
