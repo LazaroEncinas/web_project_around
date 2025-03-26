@@ -28,7 +28,7 @@
   width: 282px;
 }
 
-.photos__elements {
+.elements__photos {
   width: 282px;
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,7 @@
   background-color: #fff;
 }
 
-.photos__elementsText {
+.elements__photos-text {
   width: 246px;
   padding: 25px 21px;
   font-family: Inter;
@@ -69,6 +69,8 @@
   .elements {
     max-width: 282px;
   }
+}
+
 
 /*
 @media screen and (min-width: 768px) and (max-width: 1279px) {
