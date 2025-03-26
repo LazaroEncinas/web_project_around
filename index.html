@@ -22,23 +22,40 @@
             alt="logo Around"
           />
         </nav>
-        <hr class="header__line" />
+        <!-- <hr class="header__line" /> -->
       </header>
       <main class="main">
         <section class="profile">
           <div class="profile__cardImage">
-            <img src="./images/jacquesProfile.png" alt="Jacques Cousteau" class="profile__image"/>
+            <img
+              src="./images/jacquesProfile.png"
+              alt="Jacques Cousteau"
+              class="profile__image"
+            />
           </div>
           <div class="profile__info">
-          <div class="profile__info-title">
-            <h1 class="profile__title">Jacques Cousteau</h1>
-            <button class="profile__button-edit"></button>
+            <div class="profile__info-title">
+              <h1 class="profile__title">Jacques Cousteau</h1>
+              <button class="profile__button-edit">
+                <img
+                  src="./images/edit.png"
+                  alt="edit"
+                  class="profile__button-editing"
+                />
+              </button>
+            </div>
+            <p class="profile__subtitle">Explorador</p>
           </div>
-          <p class="profile__subtitle">Explorador</p>
-        </div>
-          <button class="profile__button-add"></button>
+          <button class="profile__button-add">
+            <img
+              src="./images/add.png"
+              alt="Add card"
+              class="profile__button-addimg"
+            />
+          </button>
+          <!-- poner marginleft auto -->
         </section>
-      <section class="elements">
+        <section class="elements">
           <div class="elements__card">
             <img
               src="./images/vale de yosemite.png"
@@ -134,11 +151,42 @@
               />
             </div>
           </div>
-      </section>
+        </section>
       </main>
       <footer class="footer">
-        <p class="footer-around">© 2024 Around The U.S.</p>
+        <p>© 2024 Around The U.S.</p>
       </footer>
+
+      <!-- DE AQUI PARA ABAJO POP-UP -->
+
+      <div class="popup">
+        <div class="popup__container popup__profile">
+          <h2 class=" popup__title">Editar perfil</h2>
+          <button class="popup__close-button">
+            <img
+              src="./images/Close Icon.png"
+              alt="close button"
+              class="popup__close-icon"
+            />
+          </button>
+          <form class="popup__edit-profile-form">
+            <input
+              type="text"
+              id="name"
+              class="popup__input-name popup__input"
+              placeholder="Nome"
+            />
+            <input
+              type="text"
+              id="about"
+              class="popup__input-about popup__input"
+              placeholder="Sobre mim"
+            />
+            <button class="popup__save-button" type="button">Salvar</button>
+          </form>
+        </div>
+      </div>
     </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
