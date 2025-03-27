@@ -88,3 +88,14 @@
   border: none;
   border-radius: 2px;
 }
+
+@media (max-width: 581px) {
+  .popup__container {
+    width: 282px;
+    height: 322px;
+  }
+
+  .popup__title {
+    width: 282px;
+  }
+}
